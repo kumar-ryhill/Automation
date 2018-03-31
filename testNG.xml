@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Apr30batch">
+    
+    <parameter name="browser" value="Firefox" />
+	<parameter name="URL" value="https://in.puma.com"/>
+
+<listeners> 
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+ <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+    <test name="Set1">
+     <classes>
+            
+            <class  name="Scenario_Component.Scenario_Search" />
+            
+       </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

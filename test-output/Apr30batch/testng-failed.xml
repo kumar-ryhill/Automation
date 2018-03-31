@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Apr30batch]">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="URL" value="https://in.puma.com"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Set1(failed)">
+    <classes>
+      <class name="Scenario_Component.Scenario_Search">
+        <methods>
+          <include name="testInvalidSearch"/>
+          <include name="testvalidSearch"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_Search -->
+    </classes>
+  </test> <!-- Set1(failed) -->
+</suite> <!-- Failed suite [Apr30batch] -->
